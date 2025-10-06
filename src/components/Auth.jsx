@@ -5,7 +5,7 @@ export default function Auth() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "https://congenial-space-doodle-69rprx59rp7735vpx-5173.app.github.dev", // Change for deployed app
+        redirectTo: "https://todo-app5510.netlify.app", // Change for deployed app
       },
     });
     if (error) console.error(error.message);
